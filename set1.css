@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+}
+
+.nav {
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 70px;
+  grid-row: 1/2;
+  grid-column: 1/4;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  position: sticky;
+  top: 0;
+  display: inline block;
+}
+
+
+img {
+  width: 100px;
+}
+
+.navlink {
+  display: flex;
+}
+
+.search {
+  display: flex;
+
+}
+
+.search form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+
+}
+
+li {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  transition: 0.5s;
+}
+
+li:hover {
+  color: blue;
+  transform: scale(1.1);
+  /* text-decoration: underline; */
+}
+
+.body {
+  background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-color: black; */
+  height: 70vh;
+  grid-row: 2/3;
+  grid-column: 1/4;
+}
+
+.images {
+  display: flex;
+  width: 100vw;
+  /* background-color: red; */
+  height: 45vh;
+  grid-row: 3/4;
+  grid-column: 1/4;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* row-gap: 20px; */
+
+
+}
+
+.image1 {
+  background-image: url('https://www.lifeinminnesota.com/wp-content/uploads/2022/04/Burger.jpg.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-color: blue; */
+  width: 300px;
+  height: 40vh;
+  /* grid-row: 3/4;
+  grid-column: 1/2; */
+
+}
+
+.image2 {
+  background-image: url('https://kauveryhospital.com/blog/wp-content/uploads/2021/04/pizza-5179939_960_720.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-color: green; */
+  width: 300px;
+  height: 40vh;
+}
+
+.image3 {
+  background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0e/3d/3c/f8/kathmandu-special-momo.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: yellow;
+  width: 300px;
+  height: 40vh;
+}
+
+/* .image1 {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  background-color: white;
+  height: 30px;
+} */
+
+
+.footer {
+  display: grid;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  grid-row: 4/5;
+  grid-column: 1/4;
+  font-family: 'Roboto', sans-serif;
+}
